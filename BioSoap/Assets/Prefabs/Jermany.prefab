@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4181939522516051402}
   - component: {fileID: 1038548192141811733}
   - component: {fileID: 3285611677738943660}
-  - component: {fileID: 769427310562242642}
+  - component: {fileID: 8474420074396830859}
   m_Layer: 0
   m_Name: Jermany
   m_TagString: E1
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a623f53e04de904ab22e0e47f548809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2659817839980351305, guid: d0ff11bcc552dea47b4f878d77589bb1, type: 3}
+  player: {fileID: 0}
   speed: 1
 --- !u!114 &3285611677738943660
 MonoBehaviour:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 15
   damage: 5
---- !u!54 &769427310562242642
+--- !u!54 &8474420074396830859
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 3097631235408630672}
   m_Layer: 0
   m_Name: GermShadow
-  m_TagString: E1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
