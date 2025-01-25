@@ -153,7 +153,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64137723}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 249893313b3d06f4bbc2330d2d51cd1e, type: 3}
   m_Name: 
@@ -162,6 +162,25 @@ MonoBehaviour:
   speed: 5
   buttonDelay: 7
   maxSpread: 0.2
+  origin: {fileID: 64137724}
+--- !u!114 &64137728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64137723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4aaae152008cf544b03de06fdcc62ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefabBomb: {fileID: 6895388345902299176, guid: 9c9d62e6497a84045862294cbd49c2d3, type: 3}
+  projectilePrefabShot: {fileID: 8167652381066053535, guid: f067982ef88f9654fb0d137ef5a5b10b, type: 3}
+  projectilePrefabTheBub: {fileID: 8167652381066053535, guid: 35e54a306ba536940aa69221a58e1f39, type: 3}
+  buttonDelayB: 7
+  buttonDelayT: 0.05
+  buttonDelayS: 1
   origin: {fileID: 64137724}
 --- !u!1001 &294159225
 PrefabInstance:
@@ -1673,6 +1692,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 252194889222801236, guid: d0ff11bcc552dea47b4f878d77589bb1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 64137727}
+    - targetCorrespondingSourceObject: {fileID: 252194889222801236, guid: d0ff11bcc552dea47b4f878d77589bb1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 64137728}
   m_SourcePrefab: {fileID: 100100000, guid: d0ff11bcc552dea47b4f878d77589bb1, type: 3}
 --- !u!1001 &4055128648259125136
 PrefabInstance:
