@@ -13,7 +13,7 @@ public class FirstPersonCameraRotation : MonoBehaviour
     [Range(0f, 90f)] [SerializeField] float yRotationLimit = 88f;
 
     Vector2 rotation = Vector2.zero;
-    const string xAxis = "Mouse X"; //Strings in direct code generate garbage, storing and re-using them creates no garbage
+    const string xAxis = "Mouse X";
     const string yAxis = "Mouse Y";
 
     void Update()
