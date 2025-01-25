@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slidTime: 5
   shootTime: 3
-  speed: 1
+  speed: 0.5
   soapy: {fileID: 0}
 --- !u!54 &7485476730108297852
 Rigidbody:
