@@ -8,15 +8,15 @@ public class BovidCirc : MonoBehaviour
     public float agroTimer = 30;
     float checker = 0;
     public float speed = 2;
-    public float changes = 0;
     public GameObject soapy;
+
 
     void Update()
     {
         if (checker <= agroTimer)
         {
             timeCounter += Time.deltaTime;
-            float x = Mathf.Cos(timeCounter * changes);
+            float x = Mathf.Sin(timeCounter);
             float y = 10;
             float z = Mathf.Sin(timeCounter);
             transform.position = new Vector3(x, y, z);
@@ -25,7 +25,7 @@ public class BovidCirc : MonoBehaviour
         else
         {
             var step = speed * Time.deltaTime; // calculate distance to move
-            transform.position = Vector3.MoveTowards(transform.position, soapy.transform.position, step);
+            transform.position = Vector3.MoveTowards(transform.position, soapy.transform.position, speed);
         }
 
     }
