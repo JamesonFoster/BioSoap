@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8167652381066053535, guid: f067982ef88f9654fb0d137ef5a5b10b, type: 3}
   speed: 10
-  timer: 5
+  buttonDelay: 1
   origin: {fileID: 1752197413868565880}
 --- !u!1 &1715292355793669352
 GameObject:
@@ -62,7 +62,9 @@ GameObject:
   - component: {fileID: 5375991053290991901}
   - component: {fileID: 2545982853775437566}
   - component: {fileID: 276179436784531522}
+  - component: {fileID: 5173375762846858956}
   - component: {fileID: 990571073889573555}
+  - component: {fileID: 719354297569227869}
   m_Layer: 0
   m_Name: Soapy
   m_TagString: Player
@@ -187,6 +189,22 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5173375762846858956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715292355793669352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270360546c149324b9351cb1d3357f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerhealth: 100
+  isdead: 0
+  exploDamage: 15
+  munchDamage: 3
 --- !u!54 &990571073889573555
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -214,6 +232,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!135 &719354297569227869
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715292355793669352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2122720717216046586
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8167652381066053535, guid: f067982ef88f9654fb0d137ef5a5b10b, type: 3}
   speed: 10
-  timer: 5
+  buttonDelay: 1
   origin: {fileID: 0}
 --- !u!65 &76418237068012227
 BoxCollider:
