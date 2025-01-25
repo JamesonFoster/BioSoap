@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class MedPack : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public  PlayerHealthSystem;
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Medi"))
+        {
+            Destroy(other);
+            if (timr > .5)
+                {
+                    playerhealth + 20;
+                }
+        }
     }
-
     // Update is called once per frame
     void Update()
     {

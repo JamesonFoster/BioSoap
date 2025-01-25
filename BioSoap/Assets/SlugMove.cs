@@ -6,7 +6,6 @@ public class SlugMove : MonoBehaviour
 {
     //public float slidTime = 5;
     //public float shootTime = 3;
-    public GameObject soapy;
     //float timer = 0;
 
     public GameObject player; // Assign the player's transform in the Inspector
