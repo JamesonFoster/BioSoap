@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752197413868565880}
   - component: {fileID: 5850872477667554577}
+  - component: {fileID: 447027815617516614}
   m_Layer: 0
   m_Name: Origin
   m_TagString: Untagged
@@ -39,7 +40,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252194889222801236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4214728a457a254292ff47d4ef66140, type: 3}
   m_Name: 
@@ -47,6 +48,27 @@ MonoBehaviour:
   projectilePrefab: {fileID: 8167652381066053535, guid: f067982ef88f9654fb0d137ef5a5b10b, type: 3}
   speed: 10
   buttonDelay: 1
+  origin: {fileID: 1752197413868565880}
+--- !u!114 &447027815617516614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252194889222801236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4aaae152008cf544b03de06fdcc62ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefabBomb: {fileID: 6895388345902299176, guid: 9c9d62e6497a84045862294cbd49c2d3, type: 3}
+  projectilePrefabShot: {fileID: 8167652381066053535, guid: f067982ef88f9654fb0d137ef5a5b10b, type: 3}
+  projectilePrefabTheBub: {fileID: 8167652381066053535, guid: 35e54a306ba536940aa69221a58e1f39, type: 3}
+  buttonDelayB: 4
+  buttonDelayT: 0.05
+  buttonDelayS: 1
+  weaponselect: 1
+  bombCount: 1
   origin: {fileID: 1752197413868565880}
 --- !u!1 &1715292355793669352
 GameObject:
@@ -154,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  rb: {fileID: 990571073889573555}
 --- !u!114 &2545982853775437566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +228,7 @@ MonoBehaviour:
   isdead: 0
   exploDamage: 15
   munchDamage: 3
+  invisframes: 1
 --- !u!54 &990571073889573555
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -358,6 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  rb: {fileID: 0}
 --- !u!114 &4576717858015078286
 MonoBehaviour:
   m_ObjectHideFlags: 0
