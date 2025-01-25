@@ -10,6 +10,7 @@ TagManager:
   - E1
   - E2
   - Spawner
+  - BDrop
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ public class TrashyPile1 : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Boom"))
         {
-            health -= damage * 7;
+            health -= damage * 5;
         }
     }
 

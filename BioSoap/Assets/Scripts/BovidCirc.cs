@@ -16,12 +16,13 @@ public class BovidCirc : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
+
     void Update()
     {
         if (checker <= agroTimer)
         {
             timeCounter += Time.deltaTime;
-            float x = Mathf.Cos(timeCounter * changes);
+            float x = Mathf.Sin(timeCounter);
             float y = 10;
             float z = Mathf.Sin(timeCounter);
             transform.position = new Vector3(x, y, z);
