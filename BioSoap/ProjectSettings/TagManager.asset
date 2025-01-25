@@ -9,6 +9,7 @@ TagManager:
   - Boom
   - E1
   - E2
+  - Spawner
   layers:
   - Default
   - TransparentFX
