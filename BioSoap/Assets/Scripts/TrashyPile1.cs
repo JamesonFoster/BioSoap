@@ -1,27 +1,29 @@
 using UnityEngine;
 
-public class TrashyPile : MonoBehaviour
+public class TrashyPile1 : MonoBehaviour
 {
-    public float health = 100;
-    public GameObject scaler;
+    public float health = 20;
     public float damage = 5;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bubble"))
+        if (other.gameObject.CompareTag("Player"))
         {
             health -= damage;
         }
+        if (other.gameObject.CompareTag("Bubble"))
+        {
+            health -= damage * 4;
+        }
         if (other.gameObject.CompareTag("Boom"))
         {
-            health -= damage * 5;
+            health -= damage * 7;
         }
     }
 
 // Update is called once per frame
 void Update()
     {
-        scaler.transform.localScale = new Vector3((health / 100), (health / 100), (health / 100));
         if (health <= 0)
         {
             Destroy(gameObject);
