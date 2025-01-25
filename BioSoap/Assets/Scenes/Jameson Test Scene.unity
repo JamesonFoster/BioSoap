@@ -175,6 +175,14 @@ PrefabInstance:
       propertyPath: soapy
       value: 
       objectReference: {fileID: 663355806}
+    - target: {fileID: 8952211090093252522, guid: 9996a57fd637eaa44ac4801285c46a36, type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952211090093252522, guid: 9996a57fd637eaa44ac4801285c46a36, type: 3}
+      propertyPath: agroTimer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
