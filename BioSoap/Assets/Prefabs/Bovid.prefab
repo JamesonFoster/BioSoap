@@ -72,9 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d8daf482e71254282f7753c995eabf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agroTimer: 10
+  agroTimer: 15
   speed: 3.5
-  soapy: {fileID: 1715292355793669352, guid: d0ff11bcc552dea47b4f878d77589bb1, type: 3}
+  changes: 0
+  player: {fileID: 0}
 --- !u!23 &2466544159969491937
 MeshRenderer:
   m_ObjectHideFlags: 0

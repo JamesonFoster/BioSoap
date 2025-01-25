@@ -419,7 +419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0784c0783a5d4647abe7f7aa1f0de05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  base_speed: 3
+  max_speed: 6
   rb: {fileID: 0}
   onground: 1
 --- !u!114 &2090345718556515181
@@ -579,7 +580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0784c0783a5d4647abe7f7aa1f0de05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  base_speed: 4
+  max_speed: 8
   rb: {fileID: 9033149937200480943}
   onground: 1
 --- !u!114 &3020746316159426885
