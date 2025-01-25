@@ -11,6 +11,7 @@ TagManager:
   - E2
   - Spawner
   - BDrop
+  - Medi
   layers:
   - Default
   - TransparentFX
