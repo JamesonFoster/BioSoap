@@ -10,7 +10,11 @@ public class BubbleSlamShot : MonoBehaviour
     [SerializeField]
     private float speed = 10.0f;
 
-    
+    public float timer = 5;
+    private float cool = 0;
+
+    [SerializeField]
+    private Transform origin;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,20 +24,25 @@ public class BubbleSlamShot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(cool <= timer)
         {
-            Debug.Log("FireBubble");
-            Instantiate(projectilePrefab, transform.position, transform.rotation);
-        }
+            if(Input.GetButtonDown("Fire1"))
+            {
+                Debug.Log("FireBubble");
+                Instantiate(projectilePrefab, origin.position, transform.rotation);
+            }
 
-        if(Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-        }
+            if(Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+            }
 
-        if(Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
+            if(Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
+            }
+            cool = 0;
         }
+        timer += (Time.deltaTime);
     }
 }
