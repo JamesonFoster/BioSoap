@@ -41,8 +41,7 @@ public class BubbleSlamShot : MonoBehaviour
             {
                 transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
             }
-            cool = 0;
         }
-        timer += (Time.deltaTime);
+        cool += (Time.deltaTime);
     }
 }
