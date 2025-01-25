@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Bubble
+  - Boom
+  - E1
+  - E2
   layers:
   - Default
   - TransparentFX

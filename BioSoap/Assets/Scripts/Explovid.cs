@@ -7,13 +7,18 @@ public class Explovid : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Instantiate(_replacement, transform.position, transform.rotation);
             Destroy(gameObject);
+            Instantiate(_replacement, transform.position, transform.rotation);
         }
         if (other.gameObject.CompareTag("Bubble"))
         {
-            Instantiate(_replacement, transform.position, transform.rotation);
             Destroy(gameObject);
+            Instantiate(_replacement, transform.position, transform.rotation);
+        }
+        if (other.gameObject.CompareTag("Boom"))
+        {
+            Destroy(gameObject);
+            Instantiate(_replacement, transform.position, transform.rotation);
         }
     }
 }

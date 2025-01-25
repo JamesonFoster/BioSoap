@@ -5,8 +5,8 @@ public class TrashyPile : MonoBehaviour
     public float health = 100;
     public GameObject scaler;
     public float damage = 5;
-    private void OnTriggerEnter(Collider other)
 
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bubble"))
         {
