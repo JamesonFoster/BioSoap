@@ -12,6 +12,10 @@ public class TrashyPile : MonoBehaviour
         {
             health -= damage;
         }
+        if (other.gameObject.CompareTag("Boom"))
+        {
+            health -= damage * 5;
+        }
     }
 
 // Update is called once per frame

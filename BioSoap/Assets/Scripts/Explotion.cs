@@ -9,7 +9,7 @@ public class Explotion : MonoBehaviour
     void Update()
     {
             deathTimer -= (Time.deltaTime);
-            scaler.transform.localScale = new Vector3((2 * deathTimer), (2 * deathTimer), (2 * deathTimer));
+            scaler.transform.localScale = new Vector3((4 * deathTimer), (4 * deathTimer), (4 * deathTimer));
             if (deathTimer <= 0)
             {
                 Destroy(gameObject);
