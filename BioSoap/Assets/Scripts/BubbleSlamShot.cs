@@ -10,8 +10,8 @@ public class BubbleSlamShot : MonoBehaviour
     [SerializeField]
     private float speed = 10.0f;
 
-    public float timer = 5;
-    private float cool = 0;
+    public float buttonDelay = 1;
+    float lastButtonTime = 0;
 
     [SerializeField]
     private Transform origin;
@@ -24,15 +24,19 @@ public class BubbleSlamShot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(cool <= timer)
+
+        lastButtonTime += (Time.deltaTime);
+        if (lastButtonTime >= buttonDelay)
         {
             if(Input.GetButtonDown("Fire1"))
             {
-                Debug.Log("FireBubble");
                 Instantiate(projectilePrefab, origin.position, transform.rotation);
+                Debug.Log("FireBubble");
+                lastButtonTime = 0;
             }
+        }
 
-            if(Input.GetKey(KeyCode.LeftArrow))
+            /*if(Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.Rotate(Vector3.forward * speed * Time.deltaTime);
             }
@@ -41,7 +45,8 @@ public class BubbleSlamShot : MonoBehaviour
             {
                 transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
             }
-        }
-        cool += (Time.deltaTime);
+            */
+            
     }
+
 }
