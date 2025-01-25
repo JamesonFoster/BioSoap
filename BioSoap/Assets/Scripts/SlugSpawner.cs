@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SlugSpawnScript : MonoBehaviour
+public class SlugSpawner : MonoBehaviour
 {
     public GameObject Slug;
     private float lastSpawned  = 0;

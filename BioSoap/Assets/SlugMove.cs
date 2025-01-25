@@ -1,15 +1,16 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class BovidCirc : MonoBehaviour
+public class SlugMove : MonoBehaviour
 {
-    float timeCounter = 0;
-    public float agroTimer = 30;
-    float checker = 0;
-    public float speed = 2;
-    public float changes = 0;
-    public GameObject player;
+    //public float slidTime = 5;
+    //public float shootTime = 3;
+    public GameObject soapy;
+    //float timer = 0;
+
+    public GameObject player; // Assign the player's transform in the Inspector
+    public float speed = 5f; // Speed at which the object will follow the player
 
     void Start()
     {
@@ -18,15 +19,6 @@ public class BovidCirc : MonoBehaviour
 
     void Update()
     {
-        if (checker <= agroTimer)
-        {
-            timeCounter += Time.deltaTime;
-            float x = Mathf.Cos(timeCounter * changes);
-            float y = 10;
-            float z = Mathf.Sin(timeCounter);
-            transform.position = new Vector3(x, y, z);
-            checker += Time.deltaTime;
-        }
         if (player != null)
         {
             // Calculate the direction to the player
@@ -40,7 +32,5 @@ public class BovidCirc : MonoBehaviour
             Quaternion lookRotation = Quaternion.LookRotation(direction);
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * speed);
         }
-        
-
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnerScript : MonoBehaviour
+public class BovidSpawner : MonoBehaviour
 {
     public GameObject Bovid;
     private float lastSpawned  = 0;
@@ -17,6 +17,5 @@ public class SpawnerScript : MonoBehaviour
             Debug.Log("BovidSpawned");
             lastSpawned = 0;
         }    
-        
     }
 }

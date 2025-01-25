@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JermanySpawnScript : MonoBehaviour
+public class JermanySpawner : MonoBehaviour
 {
     public GameObject Jermany;
     private float lastSpawned  = 0;
@@ -14,9 +14,8 @@ public class JermanySpawnScript : MonoBehaviour
         if (lastSpawned >= spawnDelay)
         {
             Instantiate(Jermany, transform.position, transform.rotation);
-            Debug.Log("Jermany");
+            Debug.Log("JermanySpawned");
             lastSpawned = 0;
         }    
-        
     }
 }
