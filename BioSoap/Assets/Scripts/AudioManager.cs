@@ -56,4 +56,8 @@ public class AudioManager : MonoBehaviour
     {
         _BubbleBomb.Play();
     }
+    public void BovidPlay()
+    {
+        _BovidBomb.Play();
+    }
 }
