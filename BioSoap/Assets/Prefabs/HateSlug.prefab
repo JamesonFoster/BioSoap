@@ -126,8 +126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   scaler: {fileID: 5152017378777014262}
+  itemdrop: {fileID: 5457034997260682166, guid: 6119c279c21f77b48b20781661af9f40, type: 3}
   damage: 5
   deathTimer: 1
+  dropped: 0
 --- !u!114 &6143289719403095273
 MonoBehaviour:
   m_ObjectHideFlags: 0

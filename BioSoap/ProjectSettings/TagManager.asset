@@ -13,6 +13,8 @@ TagManager:
   - BDrop
   - Medi
   - Mag
+  - DeathBorder
+  - Trash
   layers:
   - Default
   - TransparentFX
