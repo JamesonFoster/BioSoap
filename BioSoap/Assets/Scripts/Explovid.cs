@@ -5,6 +5,7 @@ public class Explovid : MonoBehaviour
     public GameObject _replacement;
     public GameObject itemdrop;
     bool dropped = false;
+    bool splod = false;
     AudioManager am;
 
     private void Start()
@@ -18,8 +19,12 @@ public class Explovid : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             am.BovidPlay();
+            if (splod == false)
+            {
             Destroy(gameObject);
             Instantiate(_replacement, transform.position, transform.rotation);
+            splod = true;
+            }
         }
         if (other.gameObject.CompareTag("Bubble"))
         {

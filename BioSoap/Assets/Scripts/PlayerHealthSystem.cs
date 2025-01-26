@@ -62,6 +62,7 @@ public class PlayerHealthSystem : MonoBehaviour
         }
         if (isdead == true)
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadSceneAsync(2);
         }
     }
