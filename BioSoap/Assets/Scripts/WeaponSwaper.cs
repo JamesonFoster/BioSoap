@@ -13,6 +13,7 @@ public class WeaponSwaper : MonoBehaviour
     public float buttonDelayS = 1;
     public int weaponselect = 1;
     public float bombCount = 1;
+    public float BubbleCount = 30;
     private float timr = 0;
 
     [SerializeField]
@@ -31,6 +32,16 @@ public class WeaponSwaper : MonoBehaviour
             if (timr > .5)
                 {
                 bombCount += 1;
+                timr = 0;
+            }
+        }
+    
+        if (other.gameObject.CompareTag("Mag"))
+        {
+            Destroy(other);
+            if (timr > .5)
+                {
+                BubbleCount += 20;
                 timr = 0;
             }
         }
