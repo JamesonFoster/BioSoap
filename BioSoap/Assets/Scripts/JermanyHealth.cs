@@ -8,6 +8,13 @@ public class JermanyHealth : MonoBehaviour
     public GameObject scaler;
     public float deathTimer = 1;
     public bool dropped = false;
+    AudioManager am;
+
+    private void Start()
+    {
+        am = FindObjectOfType<AudioManager>();
+        if (am == null) Debug.LogError("_audioManager is NULL");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,7 +38,8 @@ public class JermanyHealth : MonoBehaviour
             if (deathTimer <= 0)
             {
                 Destroy(gameObject);
-            Destroy(gameObject); 
+            Destroy(gameObject);
+                am.Poofy();
             if (Random.Range(0,100) > 95)
             {
                 if (dropped == false)

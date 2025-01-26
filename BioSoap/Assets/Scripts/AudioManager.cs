@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource _BubbleBomb;
     [SerializeField] public AudioSource _POP;
     [SerializeField] private AudioSource _HeatDeath;
+    [SerializeField] private AudioSource _DeathPoof;
 
 
     public void StartTitleMusic()
@@ -63,5 +64,9 @@ public class AudioManager : MonoBehaviour
     public void Reload()
     {
         _Reload.Play();
+    }
+    public void Poofy()
+    {
+        _DeathPoof.Play();
     }
 }
