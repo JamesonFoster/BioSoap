@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 30b9a8ca39043344d8eb626baeed0c6a
   - enabled: 1
+    path: Assets/Scenes/CainanPattersonSc.unity
+    guid: 5a9259b966db9504fae7c8b27581795e
+  - enabled: 0
     path: Assets/Scenes/Jameson Test Scene.unity
     guid: f4c9dabe0fba676429d9b0b5f018200c
   m_configObjects:

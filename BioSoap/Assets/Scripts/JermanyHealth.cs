@@ -5,6 +5,8 @@ public class JermanyHealth : MonoBehaviour
     public float health = 15;
     public float damage = 5;
     public GameObject itemdrop;
+    public GameObject scaler;
+    public float deathTimer = 1;
     public bool dropped = false;
 
     private void OnTriggerEnter(Collider other)
@@ -24,6 +26,11 @@ public class JermanyHealth : MonoBehaviour
     {
         if (health <= 0)
         {
+            deathTimer -= (Time.deltaTime);
+            scaler.transform.localScale = new Vector3((1 * deathTimer),(1 * deathTimer), 1);
+            if (deathTimer <= 0)
+            {
+                Destroy(gameObject);
             Destroy(gameObject); 
             if (Random.Range(0,100) > 95)
             {
@@ -35,4 +42,5 @@ public class JermanyHealth : MonoBehaviour
             } 
         }
     }
+}
 }

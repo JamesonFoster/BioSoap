@@ -142,6 +142,8 @@ MonoBehaviour:
   health: 15
   damage: 5
   itemdrop: {fileID: 4098322137564874900, guid: af33091ed6c8c13419241481a302e1c9, type: 3}
+  scaler: {fileID: 1217107848600031380}
+  deathTimer: 1
   dropped: 0
 --- !u!54 &8474420074396830859
 Rigidbody:
@@ -310,6 +312,8 @@ MonoBehaviour:
   health: 15
   damage: 5
   itemdrop: {fileID: 0}
+  scaler: {fileID: 0}
+  deathTimer: 1
   dropped: 0
 --- !u!135 &3097631235408630672
 SphereCollider:
