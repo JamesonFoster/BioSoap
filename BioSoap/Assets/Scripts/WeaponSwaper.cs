@@ -79,13 +79,17 @@ public class WeaponSwaper : MonoBehaviour
         }
         if (weaponselect <= 2 && weaponselect > 1)
         {
-            if (lastButtonTime >= buttonDelayT)
+            if (BubbleCount > 0)
             {
-                if (Input.GetButton("Fire1"))
+                if (lastButtonTime >= buttonDelayT)
                 {
-                    Instantiate(projectilePrefabTheBub, origin.position, transform.rotation);
-                    Debug.Log("FireBubble");
-                    lastButtonTime = 0;
+                    if (Input.GetButton("Fire1"))
+                    {
+                        Instantiate(projectilePrefabTheBub, origin.position, transform.rotation);
+                        Debug.Log("FireBubble");
+                        BubbleCount -= 1;
+                        lastButtonTime = 0;
+                    }
                 }
             }
         }
@@ -99,6 +103,7 @@ public class WeaponSwaper : MonoBehaviour
                     {
                         Instantiate(projectilePrefabBomb, origin.position, transform.rotation);
                         Debug.Log("FireBubble");
+                        bombCount -= 1;
                         lastButtonTime = 0;
                     }
                 }
