@@ -7,6 +7,10 @@ public class Jermany : MonoBehaviour
 {
     public GameObject player; // Assign the player's transform in the Inspector
     public float speed = 5f; // Speed at which the object will follow the player
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
 
     void Update()
     {
