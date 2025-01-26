@@ -5,6 +5,7 @@ public class WeaponSwaper : MonoBehaviour
     public GameObject projectilePrefabBomb;
     public GameObject projectilePrefabShot;
     public GameObject projectilePrefabTheBub;
+    public GameObject BubGun;
 
     [SerializeField]
     public float buttonDelayB = 7;
@@ -15,6 +16,8 @@ public class WeaponSwaper : MonoBehaviour
     public float bombCount = 1;
     public float BubbleCount = 30;
     private float timr = 0;
+    public MeshRenderer ff;
+
 
     [SerializeField]
     private Transform origin;
@@ -55,14 +58,17 @@ public class WeaponSwaper : MonoBehaviour
         if (Input.GetKey("1"))
         {
             weaponselect = 1;
+            ff.enabled = false;
         }
         if (Input.GetKey("2"))
         {
             weaponselect = 2;
+            ff.enabled = true;
         }
         if (Input.GetKey("3"))
         {
             weaponselect = 3;
+            ff.enabled = false;
         }
         //Weapson Actions
         if (weaponselect <= 1)
