@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 	{
         if (Input.GetKeyDown(KeyCode.O))
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadSceneAsync(0); 
         }
         if (Input.GetKey(KeyCode.W) && current_speed < max_speed)
