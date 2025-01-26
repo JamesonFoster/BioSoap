@@ -25,7 +25,18 @@ public class PlayerHealthSystem : MonoBehaviour
                 playerhealth -= munchDamage;
                 timer = 0;
             }
+        if (other.gameObject.CompareTag("Medi"))
+        {
+            Destroy(other);
             
+            playerhealth += 20;
+
+            if (playerhealth > 100)
+            {
+                playerhealth = 100;
+            }
+                
+        }
         }
         
     }
