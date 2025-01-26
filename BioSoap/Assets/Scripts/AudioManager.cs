@@ -48,4 +48,20 @@ public class AudioManager : MonoBehaviour
     {
         _POP.Play();
     }
+    public void PlayHate()
+    {
+        _HeatDeath.Play();
+    }
+    public void BBomb()
+    {
+        _BubbleBomb.Play();
+    }
+    public void BovidPlay()
+    {
+        _BovidBomb.Play();
+    }
+    public void Reload()
+    {
+        _Reload.Play();
+    }
 }

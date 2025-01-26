@@ -5,15 +5,25 @@ public class Explovid : MonoBehaviour
     public GameObject _replacement;
     public GameObject itemdrop;
     bool dropped = false;
+    AudioManager am;
+
+    private void Start()
+    {
+        am = FindObjectOfType<AudioManager>();
+        if (am == null) Debug.LogError("_audioManager is NULL");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            am.BovidPlay();
             Destroy(gameObject);
             Instantiate(_replacement, transform.position, transform.rotation);
         }
         if (other.gameObject.CompareTag("Bubble"))
         {
+            am.BovidPlay();
             Destroy(gameObject);
             Instantiate(_replacement, transform.position, transform.rotation);
             if (Random.Range(0,100) > 75)
@@ -27,6 +37,7 @@ public class Explovid : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Boom"))
         {
+            am.BovidPlay();
             Destroy(gameObject);
             Instantiate(_replacement, transform.position, transform.rotation);
         }

@@ -16,6 +16,7 @@ public class WeaponSwaper : MonoBehaviour
     public float bombCount = 1;
     public float BubbleCount = 30;
     private float timr = 0;
+    AudioManager am;
     public MeshRenderer ff;
     public MeshRenderer fa;
     public MeshRenderer fb;
@@ -28,9 +29,10 @@ public class WeaponSwaper : MonoBehaviour
 
     [SerializeField]
     private Transform origin;
-    void Start()
+    private void Start()
     {
-
+        am = FindObjectOfType<AudioManager>();
+        if (am == null) Debug.LogError("_audioManager is NULL");
     }
     //Detects Item Grabs
     private void OnTriggerEnter(Collider other)
@@ -50,6 +52,7 @@ public class WeaponSwaper : MonoBehaviour
             Destroy(other);
             if (timr > .5)
                 {
+                am.Reload();
                 BubbleCount += 30;
                 timr = 0;
             }

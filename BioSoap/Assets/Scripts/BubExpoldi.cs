@@ -24,14 +24,17 @@ public class BubExpoldi : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Trash"))
         {
+            am.PlayPOP();
             Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("E1"))
         {
+            am.PlayPOP();
             Destroy(gameObject);
         }
         if (other.gameObject.CompareTag("E2"))
         {
+            am.PlayPOP();
             Destroy(gameObject);
         }
 
