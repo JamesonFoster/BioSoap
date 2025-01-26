@@ -51,7 +51,7 @@ public class WeaponSwaper : MonoBehaviour
             Destroy(other);
             if (timr > .5)
                 {
-                BubbleCount += 20;
+                BubbleCount += 30;
                 timr = 0;
             }
         }

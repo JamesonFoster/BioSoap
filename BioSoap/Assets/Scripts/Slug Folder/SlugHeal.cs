@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class SlugHeal : MonoBehaviour
 {
+    [SerializeField]
     public float health = 100;
     public GameObject scaler;
+    public GameObject itemdrop;
     public float damage = 5;
     public float deathTimer = 1;
+    public bool dropped = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +21,6 @@ public class SlugHeal : MonoBehaviour
             health -= damage * 10;
         }
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -29,7 +31,15 @@ public class SlugHeal : MonoBehaviour
             if (deathTimer <= 0)
             {
                 Destroy(gameObject);
+                if (Random.Range(0,100) > 65)
+            {
+                if (dropped == false)
+                {
+                    Instantiate(itemdrop, transform.position, transform.rotation);
+                    dropped = true;
+                }
             }
-        }
+            }
+    }
     }
 }

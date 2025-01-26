@@ -14,6 +14,10 @@ public class BubExpoldi : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.gameObject.CompareTag("Trash"))
+        {
+            Destroy(gameObject);
+        }
         if (other.gameObject.CompareTag("E1"))
         {
             Destroy(gameObject);

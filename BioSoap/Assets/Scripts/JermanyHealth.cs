@@ -4,6 +4,8 @@ public class JermanyHealth : MonoBehaviour
 {
     public float health = 15;
     public float damage = 5;
+    public GameObject itemdrop;
+    public bool dropped = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,7 +24,15 @@ public class JermanyHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);  
+            Destroy(gameObject); 
+            if (Random.Range(0,100) > 95)
+            {
+                if (dropped == false)
+                {
+                    Instantiate(itemdrop, transform.position, transform.rotation);
+                    dropped = true;
+                }
+            } 
         }
     }
 }
