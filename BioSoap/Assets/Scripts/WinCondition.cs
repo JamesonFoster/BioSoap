@@ -18,6 +18,7 @@ public class WinCondition : MonoBehaviour
         float trashy = enemies.Length;
         if (trashy <= 0)
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadSceneAsync(3);
         }
 

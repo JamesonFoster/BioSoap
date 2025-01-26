@@ -10,7 +10,9 @@ public class PlayerHealthSystem : MonoBehaviour
         public float exploDamage = 15;
         public float munchDamage = 3;
         public float invisframes = 1;
-    float timer = 0;
+        float timer = 0;
+    public GameObject ded;
+
 
 
     private void OnTriggerEnter(Collider other)
@@ -31,7 +33,6 @@ public class PlayerHealthSystem : MonoBehaviour
             if (other.gameObject.CompareTag("DeathBorder"))
             {
                 playerhealth -= munchDamage * 5000;
-                timer = 0;
                 isdead = true;
                 Debug.Log("d");
             }
@@ -61,6 +62,7 @@ public class PlayerHealthSystem : MonoBehaviour
         }
         if (isdead == true)
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadSceneAsync(2);
         }
     }
