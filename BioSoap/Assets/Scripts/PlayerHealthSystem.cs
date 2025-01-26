@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 public class PlayerHealthSystem : MonoBehaviour
 {
         public float playerhealth = 100;
@@ -56,6 +58,10 @@ public class PlayerHealthSystem : MonoBehaviour
         if (playerhealth <= 0)
         {
             isdead = true;
+        }
+        if (isdead == true)
+        {
+            SceneManager.LoadSceneAsync(2);
         }
     }
 }

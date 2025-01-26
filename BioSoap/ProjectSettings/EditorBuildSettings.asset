@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Jameson Test Scene.unity
     guid: f4c9dabe0fba676429d9b0b5f018200c
+  - enabled: 1
+    path: Assets/Scenes/DeathMenu.unity
+    guid: adcd5e7380c48c9409fa88b43ca12579
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
