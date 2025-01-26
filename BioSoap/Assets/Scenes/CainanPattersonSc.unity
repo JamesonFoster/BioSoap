@@ -1310,7 +1310,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 715142137}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -4263,7 +4263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5460453184041732586, guid: 17b6d16a08fbaae46824ec6cb2943f5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 11.3
       objectReference: {fileID: 0}
     - target: {fileID: 5460453184041732586, guid: 17b6d16a08fbaae46824ec6cb2943f5f, type: 3}
       propertyPath: m_LocalPosition.z
