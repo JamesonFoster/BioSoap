@@ -31,7 +31,7 @@ public class SlugHeal : MonoBehaviour
             if (deathTimer <= 0)
             {
                 Destroy(gameObject);
-                if (Random.Range(0,100) > 65)
+                if (Random.Range(0,100) > 25)
             {
                 if (dropped == false)
                 {
