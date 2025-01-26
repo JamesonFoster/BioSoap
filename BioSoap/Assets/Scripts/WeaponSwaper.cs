@@ -28,7 +28,6 @@ public class WeaponSwaper : MonoBehaviour
 
     [SerializeField]
     private Transform origin;
-
     void Start()
     {
 

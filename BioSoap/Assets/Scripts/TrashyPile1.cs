@@ -13,7 +13,7 @@ public class TrashyPile1 : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Bubble"))
         {
-            health -= damage * 4;
+            health -= damage;
         }
         if (other.gameObject.CompareTag("Boom"))
         {

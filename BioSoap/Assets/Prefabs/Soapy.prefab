@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899813374740011545}
   - component: {fileID: 5463033006478681212}
+  - component: {fileID: 885124111595448395}
   - component: {fileID: 4771599867062440000}
   - component: {fileID: 120957330441599168}
   - component: {fileID: 1931487277959797435}
@@ -88,6 +89,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &885124111595448395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292774626345367346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ef10c631de6c64fac22f245a2159b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!114 &4771599867062440000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,12 +209,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911357620276864710}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.39067203, y: -0.015444195, z: -0.018678043, w: 0.9202109}
-  m_LocalPosition: {x: 0.726, y: 0.546, z: 0.8539998}
-  m_LocalScale: {x: 1.3971037, y: 1.4819131, z: 1.853483}
+  m_LocalRotation: {x: 0.7130833, y: -0.007120798, z: -0.023166498, w: 0.7006603}
+  m_LocalPosition: {x: 0.51889235, y: 0.1822629, z: 0.5122357}
+  m_LocalScale: {x: 1.0048747, y: 0.87956035, z: 1.1441722}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9105553044540948202}
+  m_Father: {fileID: 3874818703759120430}
   m_LocalEulerAnglesHint: {x: 45.925, y: -3.546, z: -3.828}
 --- !u!114 &502515890728189189
 MonoBehaviour:
@@ -340,7 +354,6 @@ Transform:
   m_LocalScale: {x: 0.71886, y: 0.94215965, z: 0.26907557}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6968242604145923248}
   - {fileID: 1899813374740011545}
   m_Father: {fileID: 3874818703759120430}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
@@ -425,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ef10c631de6c64fac22f245a2159b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!114 &2090345718556515181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,6 +532,7 @@ Transform:
   - {fileID: 799467567689614306}
   - {fileID: 6248381128625559833}
   - {fileID: 8052742825939443415}
+  - {fileID: 6968242604145923248}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4860236072876345090
