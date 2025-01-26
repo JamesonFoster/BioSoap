@@ -17,6 +17,13 @@ public class WeaponSwaper : MonoBehaviour
     public float BubbleCount = 30;
     private float timr = 0;
     public MeshRenderer ff;
+    public MeshRenderer fa;
+    public MeshRenderer fb;
+    public MeshRenderer fc;
+    public MeshRenderer ee;
+    public MeshRenderer ea;
+    public MeshRenderer eb;
+    public MeshRenderer ec;
 
 
     [SerializeField]
@@ -59,16 +66,38 @@ public class WeaponSwaper : MonoBehaviour
         {
             weaponselect = 1;
             ff.enabled = false;
+            fa.enabled = false;
+            fb.enabled = false;
+            fc.enabled = false;
+            ee.enabled = true;
+            ea.enabled = true;
+            eb.enabled = true;
+            ec.enabled = true;
+            
         }
         if (Input.GetKey("2"))
         {
             weaponselect = 2;
             ff.enabled = true;
+            fa.enabled = true;
+            fb.enabled = true;
+            fc.enabled = true;
+            ee.enabled = false;
+            ea.enabled = false;
+            eb.enabled = false;
+            ec.enabled = false;
         }
         if (Input.GetKey("3"))
         {
             weaponselect = 3;
             ff.enabled = false;
+            fa.enabled = false;
+            fb.enabled = false;
+            fc.enabled = false;
+            ee.enabled = true;
+            ea.enabled = true;
+            eb.enabled = true;
+            ec.enabled = true;
         }
         //Weapson Actions
         if (weaponselect <= 1)
