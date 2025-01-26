@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
     }
         void Update()
 	{
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            SceneManager.LoadSceneAsync(0); 
+        }
         if (Input.GetKey(KeyCode.W) && current_speed < max_speed)
         {
             current_speed += 1 * Time.deltaTime;
