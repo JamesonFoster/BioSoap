@@ -12,6 +12,7 @@ TagManager:
   - Spawner
   - BDrop
   - Medi
+  - Mag
   layers:
   - Default
   - TransparentFX
