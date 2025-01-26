@@ -4,7 +4,7 @@ public class TrashyPile : MonoBehaviour
 {
     public float health = 100;
     public GameObject scaler;
-    public float damage = 5;
+    public float damage = 1;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,7 +14,7 @@ public class TrashyPile : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Boom"))
         {
-            health -= damage * 5;
+            health -= damage * 20;
         }
     }
 

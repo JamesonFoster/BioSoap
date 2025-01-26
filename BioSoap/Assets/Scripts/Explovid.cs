@@ -16,7 +16,7 @@ public class Explovid : MonoBehaviour
         {
             Destroy(gameObject);
             Instantiate(_replacement, transform.position, transform.rotation);
-            if (Random.Range(0,100) > 0)
+            if (Random.Range(0,100) > 75)
             {
                 if (dropped == false)
                 {
