@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
 public class PlayerHealthSystem : MonoBehaviour
 {
         public float playerhealth = 100;
@@ -25,8 +26,15 @@ public class PlayerHealthSystem : MonoBehaviour
                 playerhealth -= munchDamage;
                 timer = 0;
             }
-        if (other.gameObject.CompareTag("Medi"))
-        {
+            if (other.gameObject.CompareTag("DeathBorder"))
+            {
+                playerhealth -= munchDamage * 5000;
+                timer = 0;
+                isdead = true;
+                Debug.Log("d");
+            }
+            if (other.gameObject.CompareTag("Medi"))
+            {
             Destroy(other);
             
             playerhealth += 20;
@@ -35,9 +43,11 @@ public class PlayerHealthSystem : MonoBehaviour
             {
                 playerhealth = 100;
             }
-                
+            }
+        
         }
-        }
+        
+
         
     }
 
