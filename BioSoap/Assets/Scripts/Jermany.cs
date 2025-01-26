@@ -1,9 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Jermany : MonoBehaviour
 
 {
-    public Transform player; // Assign the player's transform in the Inspector
+    public GameObject player; // Assign the player's transform in the Inspector
     public float speed = 5f; // Speed at which the object will follow the player
 
     void Update()
@@ -11,7 +13,7 @@ public class Jermany : MonoBehaviour
         if (player != null)
         {
             // Calculate the direction to the player
-            Vector3 direction = player.position - transform.position;
+            Vector3 direction = player.transform.position - transform.position;
             direction.Normalize();
 
             // Move the object towards the player
