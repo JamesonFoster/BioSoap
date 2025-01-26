@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 289.5 292.6">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3 {
+        fill: #fff;
+      }
+
+      .st0, .st4 {
+        stroke: #797a7d;
+        stroke-miterlimit: 10;
+      }
+
+      .st2 {
+        opacity: .4;
+      }
+
+      .st2, .st5, .st4, .st3, .st6 {
+        isolation: isolate;
+      }
+
+      .st4 {
+        fill: none;
+        opacity: .8;
+        stroke-width: 3px;
+      }
+
+      .st3, .st6 {
+        opacity: .5;
+      }
+
+      .st7 {
+        fill: #797a7d;
+      }
+
+      .st6 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-386" y1="183.8" x2="-145" y2="183.8" gradientTransform="translate(328.6 -119.2) rotate(-90) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9bd3ac"/>
+      <stop offset="0" stop-color="#9ad2ad"/>
+      <stop offset=".3" stop-color="#98d1cb"/>
+      <stop offset=".5" stop-color="#97d0e0"/>
+      <stop offset=".8" stop-color="#96d0ed"/>
+      <stop offset="1" stop-color="#96d0f2"/>
+    </linearGradient>
+  </defs>
+  <circle class="st6" cx="144.8" cy="146.3" r="120.5"/>
+  <image class="st5" width="593" height="163" transform="translate(-130.6 -155.3) scale(.8)" xlink:href="../../../Pictures/Screenshots/Screenshot (662).png"/>
+  <path class="st3" d="M158.3,47c37.9-1.9,73.3,19.4,89.4,53.6,15.8,33.7,9.9,73.8-14.8,101.7,3-6.7,19.6-46.1,1.1-90-21-49.8-69.6-63.8-75.6-65.4h-.1Z"/>
+  <path class="st1" d="M527,183.1"/>
+  <circle class="st2" cx="108.7" cy="236" r="14.5"/>
+  <circle class="st3" cx="78.7" cy="198.9" r="24.7"/>
+  <circle class="st4" cx="145.4" cy="149.2" r="87.1"/>
+  <rect class="st7" x="141.8" y="106" width="5.9" height="80.7"/>
+  <rect class="st7" x="104.4" y="143.3" width="80.7" height="5.9"/>
+  <rect class="st0" x="24.3" y="145.8" width="241" height="1"/>
+  <rect class="st0" x="144.4" y="26" width="1" height="241"/>
+  <path class="st1" d="M378.9,354.4"/>
+  <path class="st1" d="M316.1,319.7"/>
+</svg>
