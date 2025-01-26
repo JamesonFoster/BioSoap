@@ -60,4 +60,8 @@ public class AudioManager : MonoBehaviour
     {
         _BovidBomb.Play();
     }
+    public void Reload()
+    {
+        _Reload.Play();
+    }
 }
