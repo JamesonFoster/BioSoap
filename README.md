@@ -12,6 +12,6 @@ Features:
 Tech:
 - Unity (C#)
 
-My Contributions:
+My Contributions Jameson:
 - Programmed Player Movement, Enemy AI, and Weapons/Bombs.
 - Implemented spawning logic and level design
