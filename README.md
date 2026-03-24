@@ -7,6 +7,7 @@ Features:
 - Enemy AI (very basic)
 - Weapons system
 - Inventory / UI
+- Cleanable dirty dots and trashpiles (clean all and win)
 
 Tech:
 - Unity (C#)
